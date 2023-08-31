@@ -2,11 +2,14 @@
 
 import React from 'react'
 import api from '@/app/api/members'
+import { useRouter } from 'next/navigation'
 const LoginForm = () => {
     const [user,setUser] = React.useState({
         username:"",
         password:""
     })
+
+    const router = useRouter()
 
   const  handleChange = (e) => {
         setUser({
@@ -21,10 +24,16 @@ const LoginForm = () => {
         try{
             const response = await api.post('/api/auth/register',user);
             console.log('Response:', response.data);
+            alert('user is created')
+            router.push('/members')
+           
         }
         catch(error){
             console.error('Error:', error);
+            alert('user is already exist')
         }
+        
+      
   
     }
   return (
@@ -38,7 +47,7 @@ const LoginForm = () => {
 
         <div className='flex flex-col w-full'>
             <label htmlFor="password">Password</label>
-            <input onChange={handleChange} type="text" name='password' id='password' placeholder='Enter Password' className='px-2 py-3  text-black' />
+            <input onChange={handleChange} type="password" name='password' id='password' placeholder='Enter Password' className='px-2 py-3  text-black' />
         </div>
         
         <input type="submit" value={'login'} className='bg-orange-500 text-white w-full py-3 rounded mt-5 cursor-pointer hover:bg-orange-700'/>
