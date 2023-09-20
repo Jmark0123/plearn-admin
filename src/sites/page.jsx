@@ -65,19 +65,6 @@ const LoginForm = () => {
 <div id={styles.panda}></div>
 	<div id={styles.street}></div>
 
-  <header>
-		<img src="https://cdn.pixabay.com/photo/2016/08/20/20/57/autumn-1608537_960_720.png" class="i n1"></img>
-		<img src="https://purepng.com/public/uploads/large/purepng.com-yellow-leafautumnleavesleafmapleseasonfall-541521070454nw6oe.png" class="i n2"></img>
-		<img src="https://www.freepngimg.com/thumb/autumn%20leaves/3-autumn-png-leaf-thumb.png" class="i n3"></img>
-		<img src="https://cdn.pixabay.com/photo/2016/08/20/20/57/autumn-1608537_960_720.png" class="i n4"></img>
-		<img src="https://purepng.com/public/uploads/large/purepng.com-yellow-leafautumnleavesleafmapleseasonfall-541521070454nw6oe.png" class="i n5"></img>
-		<img src="https://www.freepngimg.com/thumb/autumn%20leaves/3-autumn-png-leaf-thumb.png" class="i n6"></img>
-		<div className={styles.automn}>
-		</div>
-	</header>
-
-
-
 
     <div className='fixed flex flex-col'>
       <Image className={styles.plearnimg}

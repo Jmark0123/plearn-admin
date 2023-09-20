@@ -18,10 +18,53 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
+input{
+  background-color: #D2F5FF;
+}
+header{
+	height: 85vh;
+	overflow: hidden;
+  position: absolute;
+
+}
+.i{
+	
+	display: inline-flex;
+	width: 16%;
+	animation: anim 10.5s ease-in-out infinite;
+	transform:  translateY(-120%) rotate(0deg);
+  bottom: 50rem;
+}
+.n1{
+ 	animation-delay: 1.5s;
+}
+.n2{
+	animation-delay: 2.5s;
+}
+.n3{
+	animation-delay: 3.5s;
+}
+.n4{
+	animation-delay: 4.5s;
+}
+.n5{
+	animation-delay: 5.6s;
+}
+.n6{
+	animation-delay: 7.6s;	
+}
+
+
+h1{
+	transform: rotate(-45deg);
+}
+@keyframes anim{
+	0%{
+		transform:  translateY(-120%) rotate(0deg);
+	}
+	100%{
+		transform: translateY(120vh) rotate(-360deg);
+	}
+}
+
